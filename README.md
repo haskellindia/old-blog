@@ -1,0 +1,2 @@
+# hlt
+Haskell Learning Trails (HLT) is a series of learning materials aimed at beginners to intermediate Haskell Developers. The materials are grouped into "Trails" similar to how Java learning aids are, and each trail describes a specific concept. The tutorials are in the form of presentation slides, which need to be worked out along with actual practicals. The whole thing is meant as a self-paced and self-learning aid for Haskell.
