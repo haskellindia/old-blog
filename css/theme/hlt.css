@@ -11,15 +11,15 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-color: #c55a11;
   text-align: center;
   vertical-align: middle;
-  line-height: 1.53cm;
-  height: 1.53cm; }
+  line-height: 10%;
+  height: 10%; }
 
 #footer {
   background-color: #f8cbad;
-  height: 1.2cm;
   text-align: center;
   vertical-align: middle;
   line-height: 1.2cm;
+  height: 1.2cm;
   position: absolute;
   bottom: 10px;
   right: 0px;
