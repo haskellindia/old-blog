@@ -26,13 +26,6 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
 
 ```
      |
-     +-- templates
-     |      |
-     |      +-- _index.html  <-- Template for the start slide of a series
-     |      |
-     |      +-- _single_column <-- Template for single column slides
-     |      |
-     |      +-- _double_column <-- Template for double column slides
      |
      +-- slides
             |
@@ -45,9 +38,16 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
             |    +-- images    <-- Folder for images, if any
             |
             +-- hlt02 <-- HLT02 slides
-            .
-            .   
-```
+            |    .
+            |    .
+            |
+            +-- templates  <-- All templates in this directory
+                   |
+                   +-- _index.html  <-- Template for the start slide of a series
+                   |
+                   +-- _single_column <-- Template for single column slides
+                   |
+                   +-- _double_column <-- Template for double column slides
 
 # How to begin a new slide in an ongoing trail
 - Decide on what gets into your slide: a single piece of information (such as bullet points, or a quote, etc.) or a double-column slide having two pieces of information on the left and the right side of your slides.
