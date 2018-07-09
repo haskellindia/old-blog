@@ -6,6 +6,7 @@ HLT slides are based on [reveal.js][1]. All slides are in the folder "slides", a
 
 To begin contributing, do the following:
 
+- Add your name in the "Credits" section of the content.md slide (see slide organisation below)
 - Install [node.js][2]
 - Now, clone the HLT repository, and install relevant node modules:
 
@@ -39,16 +40,9 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
             |    |
             |    +-- index.html   <-- This is the start slide of the series
             |    |
-            |    +-- slide1.md    <-- Contents of slide1 in markdown format
+            |    +-- content.md    <-- Contents of slides
             |    |
-            |    +-- slide2    <-- Folder for slide 2
-            |           |
-            |           +-- slide2_left.md    <-- Left panel for slide2
-            |           |
-            |           +-- slide2_right.md   <-- Right panel for slide2
-            |           |
-            |           +-- someimage.img    <-- Any image needed for slide 2
-            |
+            |    +-- images    <-- Folder for images, if any
             |
             +-- hlt02 <-- HLT02 slides
             .
@@ -61,7 +55,11 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
   - If your slide is a single-column slide, use the contents in _single_column
   - If your content is a double-column content, use the contents in the _double_column
 - In index.html of your HLT series, search for the HTML comment: `"<!-- ALL SLIDES BEGIN HERE -->"`
-  - Put the contents of the slides as mentioned in the index template.
+  - Put the contents of the slide1 (title slide) as mentioned in the index template.
+- content.md is where all of your content goes in:
+  - Begin each slide with a title (using ## markdown)
+  - Enter your content for the slide
+  - Separate each slide with a "---"
 
 # Advanced editing
 Reveal.js has many more advanced editing features, and feel free to try them out! Only aspect that needs to be intact is the general template (the header, footer, logo and copyright elements): the content area can just go as you want it. This is just to have some uniformity in all our slides.
