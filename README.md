@@ -6,7 +6,7 @@ HLT slides are based on [reveal.js][1]. All slides are in the folder "slides", a
 
 To begin contributing, do the following:
 
-- Add your name in the "Credits" section of the content.md slide (see slide organisation below)
+- Add your name in "credits.md" file (see slide organisation below)
 - Install [node.js][2]
 - Now, clone the HLT repository, and install relevant node modules:
 
@@ -33,8 +33,6 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
             |    |
             |    +-- index.html   <-- This is the start slide of the series
             |    |
-            |    +-- content.md    <-- Contents of slides
-            |    |
             |    +-- images    <-- Folder for images, if any
             |
             +-- hlt02 <-- HLT02 slides
@@ -45,21 +43,19 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
                    |
                    +-- _index.html  <-- Template for the start slide of a series
                    |
-                   +-- _single_column <-- Template for single column slides
-                   |
-                   +-- _double_column <-- Template for double column slides
+                   +-- _credits.md <-- Template for adding credits
 
 # How to begin a new slide in an ongoing trail
 - Decide on what gets into your slide: a single piece of information (such as bullet points, or a quote, etc.) or a double-column slide having two pieces of information on the left and the right side of your slides.
 - Once decided, choose the template for your slide from the "templates" folder:
-  - If your slide is a single-column slide, use the contents in _single_column
-  - If your content is a double-column content, use the contents in the _double_column
+  - If your slide is a single-column slide, use the section for single-column from the template index file.
+  - If your slide is a double-column slide, use the section for double-column from the template index file.
 - In index.html of your HLT series, search for the HTML comment: `"<!-- ALL SLIDES BEGIN HERE -->"`
-  - Put the contents of the slide1 (title slide) as mentioned in the index template.
-- content.md is where all of your content goes in:
-  - Begin each slide with a title (using ## markdown)
-  - Enter your content for the slide
-  - Separate each slide with a "---"
+  - All content of your slides get in from here.
+- The templates are done in such a way that markdown can be used within the textareas. For more flexibility
+  in developing the slides, see "Advanced editing" below.
+- If there are any images in your slides, put them in the "images" directory within your HLT directory (create the
+  directory if not yet present.)   
 
 # Advanced editing
 Reveal.js has many more advanced editing features, and feel free to try them out! Only aspect that needs to be intact is the general template (the header, footer, logo and copyright elements): the content area can just go as you want it. This is just to have some uniformity in all our slides.
