@@ -45,6 +45,8 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
                    |
                    +-- _credits.md <-- Template for adding credits
 
+```
+
 # How to begin a new slide in an ongoing trail
 - Decide on what gets into your slide: a single piece of information (such as bullet points, or a quote, etc.) or a double-column slide having two pieces of information on the left and the right side of your slides.
 - Once decided, choose the template for your slide from the "templates" folder:
@@ -61,10 +63,6 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
 Reveal.js has many more advanced editing features, and feel free to try them out! Only aspect that needs to be intact is the general template (the header, footer, logo and copyright elements): the content area can just go as you want it. This is just to have some uniformity in all our slides.
 
 ENJOY!  
-
-
-
-
 
 
 [1]: https://github.com/hakimel/reveal.js "reveal.js"
