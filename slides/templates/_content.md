@@ -1,9 +1,10 @@
 <!-- SLIDE 2 -->
-## Single column slide    
+## Single column slide
 Some content goes here
 
 - Bullet point 1
-- Buller point 2														 									
+- Bullet point 2
+
 ---
 
 <!-- SLIDE 3 -->
