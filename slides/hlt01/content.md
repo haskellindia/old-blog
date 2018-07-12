@@ -1,5 +1,8 @@
 <!-- SLIDE 2 -->
-## Single column slide    
+<div>
+Single column slide
+</div>
+<!-- .element: class="header" -->
 Some content goes here
 
 - Bullet point 1
