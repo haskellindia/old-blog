@@ -15,6 +15,21 @@ To begin contributing, do the following:
     $ cd hlt
     $ npm install
 ```
+- Make a symbolic link to the slides folder within the reveal.js folder (so that you can test your
+  changes with a local npm server before committing and pushing to github):
+```
+   $ cd reveal.js
+```
+  On Linux / UNIX flavours:
+```
+   $ ln -s ../slides slides
+   $ ln ../index.html index.html
+```
+  On windows:
+```
+   $ mklink slides ../slides
+   $ mklink /h index.html index.html 
+```  
 - Finally, start the node server locally to serve your slides:
 ```
     $ npm start
@@ -26,8 +41,9 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
 
 ```
      |
+     +-- reveal.js <-- All reveal.js code is in here.
      |
-     +-- slides
+     +-- slides <-- All slide contents are here
             |
             +-- hlt01  <-- HLT01 slides
             |    |
