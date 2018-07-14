@@ -22,11 +22,13 @@ To begin contributing, do the following:
 ```
    On Linux / UNIX flavours:
 ```
+   $ ln -s ../reveal.js reveal.js
    $ ln -s ../slides slides
    $ ln ../index.html index.html
 ```
   On windows (start a command prompt as **_Administrator_**)
 ```
+   $ mklink reveal.js ..\reveal.js
    $ mklink slides ..\slides
    $ mklink /h index.html ..\index.html 
 ```  
