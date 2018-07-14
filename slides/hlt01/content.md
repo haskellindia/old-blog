@@ -31,6 +31,22 @@ Right-side information
 
 ---
 
+<!-- SLIDE 4 -->
+Vertical slide example
+<!-- .element: id="title" -->
+
+Navigate down with a down-arrow
+
+===
+
+Keep going down
+
+===
+
+Navigate up with a up-arrow
+
+---
+
 <!-- CREDITS -->
 
 Credits
