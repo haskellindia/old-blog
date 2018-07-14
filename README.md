@@ -20,15 +20,15 @@ To begin contributing, do the following:
 ```
    $ cd reveal.js
 ```
-  On Linux / UNIX flavours:
+   On Linux / UNIX flavours:
 ```
    $ ln -s ../slides slides
    $ ln ../index.html index.html
 ```
-  On windows:
+  On windows (start a command prompt as **_Administrator_**)
 ```
-   $ mklink slides ../slides
-   $ mklink /h index.html index.html 
+   $ mklink slides ..\slides
+   $ mklink /h index.html ..\index.html 
 ```  
 - Finally, start the node server locally to serve your slides:
 ```
