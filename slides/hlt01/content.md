@@ -1,5 +1,7 @@
 <!-- SLIDE 2 -->
-## Single column slide
+Single column slide
+<!-- .element: id="title" -->
+
 Some content goes here
 
 - Bullet point 1
@@ -9,7 +11,9 @@ Some content goes here
 
 <!-- SLIDE 3 -->
 <!-- Left side content -->
-## Double column slide
+Double column slide
+<!-- .element: id="title" -->
+
 <div>
 Left-side information
 - First item
@@ -29,7 +33,8 @@ Right-side information
 
 <!-- CREDITS -->
 
-## Credits
+Credits
+<!-- .element: id="title" -->
 
 <div>
 &lt;Name1&gt; [github-username](https://github.com/github-username>)

@@ -24,18 +24,19 @@
 	<body>
 		<div class="reveal">
 			<div id="header">
-				
+				<p id="header-text" style="padding-left: 10px; margin-top: 0px;"></p> 
 			</div>
 			<img src="/images/HIG-Logo-White-300.png" alt="HIG Logo" id="logo"/>
 
 			<div id="footer" style="font-size: 15px">
-					Haskell Learning Trails by <a href="https://t.me/haskellindia"> Haskell India Group </a> is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
+				Haskell Learning Trails by <a href="https://t.me/haskellindia"> Haskell India Group </a> is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
 			</div>
 			 
 			<!-- ALL SLIDES BEGIN HERE -->
 			<div class="slides">				
 				<!-- SLIDE 1: Title slide -->	
 				<section>
+					<p>
 				    <!-- DO NOT CHANGE THE NEXT LINE -->
 					<h2>Haskell Learning Trails</h2>
 
@@ -48,6 +49,7 @@
 
 <p>Please feel free to share this material to anybody you think would be interested! And, if you would like to contribute to this learning trails, head here: <a href="https://github.com/haskellindia/haskellindia.github.io">https://github.com/haskellindia/haskellindia.github.io</a></p>
 					</div>
+					</p>
 				</section>
 				
 				<!-- Actual slide contents begin from here -->
@@ -74,6 +76,24 @@
 
 				controlsLayout: 'edges'
 			});
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				var sec = document.getElementsByClassName('present')[0]
+
+				title = sec.querySelector('#title')
+
+				target = document.getElementById('header-text')
+
+				if (title != null)
+				{
+					target.innerHTML = title.innerHTML
+					title.style.display = 'none'
+				} 
+				else
+				{
+					document.getElementById('header-text').innerHTML = ""
+				}
+			} );
 		</script>
 	</body>
 </html>
