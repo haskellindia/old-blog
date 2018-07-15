@@ -79,11 +79,22 @@
 			});
 
 			Reveal.addEventListener( 'slidechanged', function( event ) {
-				var sec = document.getElementsByClassName('present')[0]
+				if (Reveal.isFirstSlide() == true)
+				{
+					document.getElementById('header-text').innerHTML = ""
+					return
+				}
 
-				title = sec.querySelector('#title')
+				var title = document.querySelector('.slides > .present > #title')
 
-				target = document.getElementById('header-text')
+				if (title == null)
+				{
+					// May be we have a title in a vertical slide
+					var present = document.getElementsByClassName('stack present')
+					var title = present[0].querySelector('.present > #title')
+				}
+
+				var target = document.getElementById('header-text')
 
 				if (title != null)
 				{

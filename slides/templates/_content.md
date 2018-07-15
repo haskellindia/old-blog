@@ -39,6 +39,9 @@ Navigate down with a down-arrow
 
 ===
 
+Vertical slide title here
+<!-- .element: id="title" -->
+
 Keep going down
 
 ===
