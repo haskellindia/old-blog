@@ -15,22 +15,18 @@ To begin contributing, do the following:
     $ cd hlt
     $ npm install
 ```
-- Make a symbolic link to the slides folder within the reveal.js folder (so that you can test your
+- Make a symbolic link to the reveal.js folder within reveal.js (so that you can test your
   changes with a local npm server before committing and pushing to github):
 ```
    $ cd reveal.js
 ```
    On Linux / UNIX flavours:
 ```
-   $ ln -s ../images images
-   $ ln -s ../slides slides
-   $ ln ../index.html index.html
+   $ ln -s ../reveal.js reveal.js
 ```
   On windows (start a command prompt as **_Administrator_**)
 ```
-   $ mklink images ..\images
-   $ mklink slides ..\slides
-   $ mklink /h index.html ..\index.html 
+   $ mklink reveal.js ..\reveal.js
 ```  
 - Finally, start the node server locally to serve your slides:
 ```
