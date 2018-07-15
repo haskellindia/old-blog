@@ -7,7 +7,7 @@
 		<title>Haskell Learning Trails - HLT01 - Getting Started</title>
 
 		<link rel="stylesheet" href="/reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="/reveal.js/css/theme/hlt.css">
+		<link rel="stylesheet" href="/reveal.js/css/theme/hlt.css">		
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="/reveal.js/lib/css/zenburn.css">
@@ -22,18 +22,25 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div id="header">
+		<div class="reveal">			 
+		<div id="header">
 				<p id="header-text" style="padding-left: 10px; margin-top: 0px;"></p> 
-			</div>
-			<img src="/images/HIG-Logo-White-300.png" alt="HIG Logo" id="logo"/>
+		</div>
 
-			<div id="footer" style="font-size: 15px">
-				<p id="footer-text">
-				Haskell Learning Trails by <a href="https://t.me/haskellindia"> Haskell India Group </a> is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
-				</p>
-			</div>
-			 
+		<img src="/images/HIG-Logo-White-300.png" alt="HIG Logo" id="logo"/>
+	
+		<div id="footer" style="font-size: 15px; vertical-align: middle;">
+     		<a href="https://t.me/haskellindia" class="footer-icon" style="margin-top: 0">
+			<img src="/images/telegram.png" alt="Telegram logo"/> 
+			</a>					
+			<a href="https://github.com/haskellindia/haskellindia.github.io" class="footer-icon" style="margin-top: 0">
+			<img src="/images/github.png" alt="Github logo"/> 
+			</a>
+			<p id="footer-text">
+			Haskell Learning Trails by <a href="https://t.me/haskellindia"> Haskell India Group </a> is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
+			</p>
+		</div>
+												
 			<!-- ALL SLIDES BEGIN HERE -->
 			<div class="slides">				
 				<!-- SLIDE 1: Title slide -->	
@@ -64,6 +71,7 @@
 
 		<script src="/reveal.js/lib/js/head.min.js"></script>
 		<script src="/reveal.js/js/reveal.js"></script>
+		<script src="/reveal.js/js/jquery.min.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -107,7 +115,21 @@
 				{
 					document.getElementById('header-text').innerHTML = ""
 				}
+
+				var iconwidth, iconheight;
+
+				if (iconwidth == null) 
+				{
+					iconwidth = $('.footer-icon').width();
+				}
+				if (iconheight == null)
+				{
+					iconheight = iconwidth + 'px'
+				}
+
+				$('.footer-icon').css({ 'height': iconheight });
 			} );
+			
 		</script>
 	</body>
 </html>
