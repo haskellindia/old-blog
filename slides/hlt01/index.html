@@ -31,10 +31,10 @@
 	
 		<div id="footer" style="font-size: 15px; vertical-align: middle;">
      		<a href="https://t.me/haskellindia" class="footer-icon" style="margin-top: 0">
-			<img src="/images/telegram.png" alt="Telegram logo"/> 
+				<img src="/images/telegram.png" alt="Telegram logo"/> 
 			</a>					
 			<a href="https://github.com/haskellindia/haskellindia.github.io" class="footer-icon" style="margin-top: 0">
-			<img src="/images/github.png" alt="Github logo"/> 
+				<img src="/images/github.png" alt="Github logo"/> 
 			</a>
 			<p id="footer-text">
 			Haskell Learning Trails by <a href="https://t.me/haskellindia"> Haskell India Group </a> is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
@@ -115,7 +115,9 @@
 				{
 					document.getElementById('header-text').innerHTML = ""
 				}
+			} );
 
+			Reveal.addEventListener( 'ready', function( event ) {
 				var iconwidth, iconheight;
 
 				if (iconwidth == null) 
@@ -128,8 +130,14 @@
 				}
 
 				$('.footer-icon').css({ 'height': iconheight });
+
 			} );
-			
+
+			function gotoLocation(url)
+			{
+				document.location.href = url;
+			}
+
 		</script>
 	</body>
 </html>
