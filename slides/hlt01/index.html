@@ -119,15 +119,23 @@
 			} );
 
 			Reveal.addEventListener( 'ready', function( event ) {
+				changeElementDimensions();
+			} );
+
+			$(window).on("orientationchange", function(event) {
+				changeElementDimensions();
+			});
+
+			function changeElementDimensions()
+			{
 				var iconwidth = $('.footer-icon').width();				
 				var iconheight = iconwidth + 'px'
 				$('.footer-icon').css({ 'height': iconheight });
 				
 				var headerheight = $('#header').height();
-				var headertextfontsize = (headerheight * 8)/10
-				
+				var headertextfontsize = (headerheight * 8)/10				
 				$('#header-text').css('font-size', headertextfontsize);
-			} );
+			}
 
 			function gotoLocation(url)
 			{
