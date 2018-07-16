@@ -1,11 +1,14 @@
 <!-- SLIDE 2 -->
-Single column slide
+# Getting started
 <!-- .element: id="title" -->
 
-Some content goes here
+### How to use this slide set?
 
-- Bullet point 1
-- Bullet point 2
+- Install Haskell (in any platform), or start with online REPLs 
+- Introductory slides give information on both these methods
+- As you read a slide, try checking out the results of the code given in slides
+- Use other online articles / materials to internalise the content in the slide
+- Code, code, code. Practise, practise, practise. **And don’t stop with these slides!**
 
 ---
 
