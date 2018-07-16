@@ -24,7 +24,7 @@
 	<body>
 		<div class="reveal">			 
 		<div id="header">
-			<p id="header-text" style="font-size: 44px; padding-left: 10px; margin-top: 0px;"></p> 
+			<p id="header-text" style="padding-left: 10px; margin-top: 0px;"></p> 
 		</div>	
 
 		<img src="/images/HIG-Logo-White-300.png" alt="HIG Logo" id="logo"/>
@@ -119,19 +119,14 @@
 			} );
 
 			Reveal.addEventListener( 'ready', function( event ) {
-				var iconwidth, iconheight;
-
-				if (iconwidth == null) 
-				{
-					iconwidth = $('.footer-icon').width();
-				}
-				if (iconheight == null)
-				{
-					iconheight = iconwidth + 'px'
-				}
-
+				var iconwidth = $('.footer-icon').width();				
+				var iconheight = iconwidth + 'px'
 				$('.footer-icon').css({ 'height': iconheight });
-
+				
+				var headerheight = $('header').height();
+				var headertextfontsize = (headerheight * 8)/10
+				
+				$('header-text').css({'font-size': headertextfontsize});
 			} );
 
 			function gotoLocation(url)
