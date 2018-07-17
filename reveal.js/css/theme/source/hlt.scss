@@ -94,6 +94,17 @@ section.has-dark-background {
 	right: 0;
 }
 
+#section-heading
+{
+	font-size: 60px;
+}
+
+#section-brief
+{
+	font-size: 24px;
+	color: rgb(137, 137, 137)
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

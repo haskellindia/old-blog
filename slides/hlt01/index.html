@@ -89,6 +89,7 @@
 				controlsLayout: 'edges'
 			});
 
+			// BEGIN: Change slide headings when slide changes
 			Reveal.addEventListener( 'slidechanged', function( event ) {
 				if (Reveal.isFirstSlide() == true)
 				{
@@ -98,11 +99,19 @@
 
 				var title = document.querySelector('.slides > .present > #title')
 
-				if (title == null)
+				if (title.innerHTML.startsWith("#"))
 				{
-					// May be we have a title in a vertical slide
-					var present = document.getElementsByClassName('stack present')
-					var title = present[0].querySelector('.present > #title')
+					// Section headings start with "#"
+					title.innerHTML = "";
+				}
+				else
+				{
+					if (title == null)
+					{
+						// May be we have a title in a vertical slide
+						var present = document.getElementsByClassName('stack present')
+						var title = present[0].querySelector('.present > #title')
+					}
 				}
 
 				var target = document.getElementById('header-text')
@@ -117,6 +126,8 @@
 					document.getElementById('header-text').innerHTML = ""
 				}
 			} );
+
+			// END: Change slide headings when slide changes
 
 			// BEGIN: ===== Responsive design for headings and icons ========
 		

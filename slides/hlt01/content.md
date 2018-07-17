@@ -12,6 +12,16 @@
 
 ---
 
+# 
+<!-- .element: id="title" -->
+
+# Introduction
+<!-- .element: id="section-heading" -->
+What is Haskell, and why is it called as a “Pure Functional Language”
+<!-- .element: id="section-brief" -->
+
+---
+
 <!-- SLIDE 3 -->
 <!-- Left side content -->
 Double column slide

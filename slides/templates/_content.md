@@ -50,6 +50,26 @@ Navigate up with a up-arrow
 
 ---
 
+<!-- 
+This is a section slide. It Contains 
+- an empty header element (i.e., #),
+- followed by an "title" identifier line, 
+- then followed by the section heading 
+- followed by a section-heading identifier, 
+- followed by a section brief line
+- followed by section-brief identifier
+-->
+
+# 
+<!-- .element: id="title" -->
+
+# Section heading
+<!-- .element: id="section-heading" -->
+Section-brief line
+<!-- .element: id="section-brief" -->
+
+---
+
 <!-- CREDITS -->
 
 Credits

@@ -48,6 +48,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   bottom: 10px;
   right: 0; }
 
+#section-heading {
+  font-size: 60px; }
+
+#section-brief {
+  font-size: 24px;
+  color: #898989; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

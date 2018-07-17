@@ -24,8 +24,8 @@
 	<body>
 		<div class="reveal">			 
 		<div id="header">
-			<p id="header-text" style="font-size: 44px; padding-left: 10px; margin-top: 0px;"></p> 
-		</div>
+			<p id="header-text" style="padding-left: 10px; margin-top: 0px;"></p> 
+		</div>	
 
 		<img src="/images/HIG-Logo-White-300.png" alt="HIG Logo" id="logo"/>
 	
@@ -89,6 +89,7 @@
 				controlsLayout: 'edges'
 			});
 
+			// BEGIN: Change slide headings when slide changes
 			Reveal.addEventListener( 'slidechanged', function( event ) {
 				if (Reveal.isFirstSlide() == true)
 				{
@@ -98,11 +99,19 @@
 
 				var title = document.querySelector('.slides > .present > #title')
 
-				if (title == null)
+				if (title.innerHTML.startsWith("#"))
 				{
-					// May be we have a title in a vertical slide
-					var present = document.getElementsByClassName('stack present')
-					var title = present[0].querySelector('.present > #title')
+					// Section headings start with "#"
+					title.innerHTML = "";
+				}
+				else
+				{
+					if (title == null)
+					{
+						// May be we have a title in a vertical slide
+						var present = document.getElementsByClassName('stack present')
+						var title = present[0].querySelector('.present > #title')
+					}
 				}
 
 				var target = document.getElementById('header-text')
@@ -118,21 +127,37 @@
 				}
 			} );
 
+			// END: Change slide headings when slide changes
+
+			// BEGIN: ===== Responsive design for headings and icons ========
+		
 			Reveal.addEventListener( 'ready', function( event ) {
-				var iconwidth, iconheight;
-
-				if (iconwidth == null) 
-				{
-					iconwidth = $('.footer-icon').width();
-				}
-				if (iconheight == null)
-				{
-					iconheight = iconwidth + 'px'
-				}
-
-				$('.footer-icon').css({ 'height': iconheight });
-
+				changeElementDimensions();	
 			} );
+
+			var wasPortrait = -1;
+			var checkOrientation = function() {
+				var isPortrait = (window.innerHeight > window.innerWidth);
+				if( isPortrait === wasPortrait ) { return; } // Nothing to do here
+				wasPortrait = isPortrait;
+
+				changeElementDimensions();
+			};
+			window.addEventListener( 'orientationchange', checkOrientation, false );
+			window.addEventListener( 'resize', checkOrientation, false );			
+
+			function changeElementDimensions()
+			{
+				var iconwidth = $('.footer-icon').width();				
+				var iconheight = iconwidth + 'px'
+				$('.footer-icon').css({ 'height': iconheight });
+				
+				var headerheight = $('#header').height();
+				var headertextfontsize = (headerheight * 8)/10				
+				$('#header-text').css('font-size', headertextfontsize);
+			}
+
+			// END: ===== Responsive design for headings and icons ========
 
 			function gotoLocation(url)
 			{

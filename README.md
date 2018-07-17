@@ -79,6 +79,8 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
   - Separate each slide with a `---`   
   - You can also have "vertical slides" - slides that need to be navigated using up/down arrows
     - Separate each vertical line with a `===`
+  - Before starting a "section" in your learning trail, add a "section" slide that simply contains
+    a section heading and its brief. Check the content.md template file for an example of a section slide.
 
 The best way to create your slides is to use the formats in the template _content.md - it is actually pretty easy to create slides! And, of course, knowing how to use [markdown] is a pre-requisite - which is also very easy.    
 
