@@ -99,18 +99,18 @@
 
 				var title = document.querySelector('.slides > .present > #title')
 
-				if (title.innerHTML.startsWith("#"))
+				if (title == null)
 				{
-					// Section headings start with "#"
-					title.innerHTML = "";
-				}
-				else
+					// May be we have a title in a vertical slide
+					var present = document.getElementsByClassName('stack present')
+					var title = present[0].querySelector('.present > #title')
+				} 
+				else 
 				{
-					if (title == null)
+					if (title.innerHTML.startsWith("#"))
 					{
-						// May be we have a title in a vertical slide
-						var present = document.getElementsByClassName('stack present')
-						var title = present[0].querySelector('.present > #title')
+						// Section headings start with "#"
+						title.innerHTML = "";
 					}
 				}
 
