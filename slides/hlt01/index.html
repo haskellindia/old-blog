@@ -118,13 +118,22 @@
 				}
 			} );
 
+			// BEGIN: ===== Responsive design for headings and icons ========
+		
 			Reveal.addEventListener( 'ready', function( event ) {
-				changeElementDimensions();
+				changeElementDimensions();	
 			} );
 
-			$(window).on("orientationchange", function(event) {
+			var wasPortrait = -1;
+			var checkOrientation = function() {
+				var isPortrait = (window.innerHeight > window.innerWidth);
+				if( isPortrait === wasPortrait ) { return; } // Nothing to do here
+				wasPortrait = isPortrait;
+
 				changeElementDimensions();
-			});
+			};
+			window.addEventListener( 'orientationchange', checkOrientation, false );
+			window.addEventListener( 'resize', checkOrientation, false );			
 
 			function changeElementDimensions()
 			{
@@ -136,6 +145,8 @@
 				var headertextfontsize = (headerheight * 8)/10				
 				$('#header-text').css('font-size', headertextfontsize);
 			}
+
+			// END: ===== Responsive design for headings and icons ========
 
 			function gotoLocation(url)
 			{
