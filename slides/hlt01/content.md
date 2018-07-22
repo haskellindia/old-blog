@@ -73,26 +73,75 @@ Pure function maintains **Referential Transparency**.
 
 Every time `f()` is called with the same `arg1` and `arg2`, it always outputs the same value. In other words, `f()` can be replaced by its output value without affecting the program behaviour.
 
-Now, why does this matter?
+---
+
+# Introduction
+<!-- .element: class="title" -->
+<br/>
+### Impure function
+
+Output depends NOT only on the inputs, but also on some side-effects
+<!-- .element: style="text-align: center;" -->
+
+![06-01](images/06-01.png)
+<!-- .element: style="border:0;" -->
+
+An impure function “adds” additional effects to its outputs. These effects are unpredictable, because they originate from within the function. 
 
 ---
 
-<!-- SLIDE 4 -->
-Vertical slide example
+Introduction
 <!-- .element: class="title" -->
 
-Navigate down with a down-arrow
+<!-- Left side content -->
+<div>
+### Pure Function example* 
+<!-- .element: style="text-align: center"-->
 
-===
+```
+function f(a, b)
+{
+  return a + b
+}
+```
 
-Vertical slide title here
+Output depends only on values of arguments `a` and `b`.
+
+</div>
+ <!-- .element: style="line-height: 1.5; float:left; width: 49%; text-align: left;" -->
+
+<!-- Right side content -->
+<div>
+### Impure function example*
+<!-- .element: style="text-align: center"-->
+
+```
+c = 6
+
+function f(a, b)
+{
+  return a + b + c
+}
+```
+
+Output depends on not only arguments `a` and `b`, but also on an external variable `c`. This is the side-effect: the function cannot control its output, and is always also dependant on `c` (not controlled by the function).
+
+<br/>
+
+</div>
+<!-- .element: style="line-height: 1.5; float: right; width: 49%; text-align: left;" -->
+
+<div>
+*The examples are not Haskell examples, just a generic language for illustration.
+</div>
+<!-- .element: style="font-size: 20px; text-align: center; position: absolute; bottom: 0; width: 100%" -->
+
+---
+
+# 
 <!-- .element: class="title" -->
 
-Keep going down
-
-===
-
-Navigate up with a up-arrow
+# &lt;To be continued&gt;
 
 ---
 
