@@ -19,7 +19,7 @@ Left-side information
 - First item
 - Second item
 </div>
- <!-- .element: style="float:left; width: 47%; text-align: left;" -->
+<!-- .element: style="line-height: 1.5; float:left; width: 49%; text-align: left;" -->
 
 <!-- Right side content -->
 <div>
@@ -27,7 +27,7 @@ Right-side information
 - First item
 - Second item
 </div>
-<!-- .element: style="float: right; width: 47%; text-align: left; -->
+<!-- .element: style="line-height: 1.5; float:right; width: 49%; text-align: left;" -->
 
 ---
 

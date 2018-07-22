@@ -1,23 +1,28 @@
-# Getting started
+Instructions
 <!-- .element: id="title" -->
 
+<!-- Left side content -->
+<div>
+### How to use this slide set?
+<!-- .element: style="text-align: center"-->
+- As you read a slide, try checking out the results of the code given in slides
+  You can use the online interactive prompt (**click logo on the bottom-right**)
+  for quickly checking results.
+- Use other online articles / materials to internalise the content in the slide
+- Install Haskell (in any platform) - Introductory slides give how-to do this
+- Code, code, code. Practise, practise, practise. **And don’t stop with these slides!**
+</div>
+ <!-- .element: style="line-height: 1.5; float:left; width: 49%; text-align: left;" -->
+
+<!-- Right side content -->
+<div>
 ### Navigation hints
+<!-- .element: style="text-align: center"-->
 - This slide-set is based on reveal.js, so all the keyboard shortcuts from reveal.js
 are available in this. Press **'?'** for an overview of all keyboard shortcuts. 
 - **Click on the Haskell India logo (on the bottom right) to open a Haskell Interactive prompt! You can try out live Haskell code on this.**
-
----
-
-# Getting started
-<!-- .element: id="title" -->
-
-### How to use this slide set?
-
-- Install Haskell (in any platform), or start with online REPLs 
-- Introductory slides give information on both these methods
-- As you read a slide, try checking out the results of the code given in slides
-- Use other online articles / materials to internalise the content in the slide
-- Code, code, code. Practise, practise, practise. **And don’t stop with these slides!**
+</div>
+<!-- .element: style="line-height: 1.5; float: right; width: 49%; text-align: left;" -->
 
 ---
 
@@ -36,27 +41,6 @@ What is Haskell, and why is it called as a “Pure Functional Language”
 
 ## What is Haskell?
 
-
----
-
-<!-- Left side content -->
-Double column slide
-<!-- .element: id="title" -->
-
-<div>
-Left-side information
-- First item
-- Second item
-</div>
- <!-- .element: style="float:left; width: 47%; text-align: left;" -->
-
-<!-- Right side content -->
-<div>
-Right-side information
-- First item
-- Second item
-</div>
-<!-- .element: style="float: right; width: 47%; text-align: left; -->
 
 ---
 
