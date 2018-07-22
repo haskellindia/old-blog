@@ -41,13 +41,13 @@ What is Haskell, and why is it called as a “Pure Functional Language”
 <!-- .element: style="line-height: 1;" -->
 ### What is Haskell?
 
-Pure Functional Programming Language
+Pure _Functional Programming_ Language
 <!-- .element: style="text-align: center;" -->
 
 ![04-01](images/04-01.png)
 <!-- .element: style="border:0;" -->
 
-“Functional Programming” is a style in which the basic method of computations is by _**application of functions to arguments**_.
+_Functional Programming_ is a style in which the basic method of computations is by _**application of functions to arguments**_.
 In the illustration above:
 
 <div>
@@ -71,7 +71,7 @@ Output depends only on the inputs, i.e., a function of only inputs.
 
 Pure function maintains **Referential Transparency**.
 
-Every time `f()` is called with the same `arg1` and `arg2`, it always outputs the same value. In other words, `f()` can be replaced by its output value without affecting the program behaviour.
+Everytime `f()` is called with the same `arg1` and `arg2`, it always outputs the same value. In other words, `f()` can be replaced by its output value without affecting the program behaviour.
 
 ---
 
