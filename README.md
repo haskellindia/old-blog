@@ -82,7 +82,33 @@ The slides of HLT are in the "slides" folder, and templates for the slides are i
   - Before starting a "section" in your learning trail, add a "section" slide that simply contains
     a section heading and its brief. Check the content.md template file for an example of a section slide.
 
-The best way to create your slides is to use the formats in the template _content.md - it is actually pretty easy to create slides! And, of course, knowing how to use [markdown] is a pre-requisite - which is also very easy.    
+The best way to create your slides is to use the formats in the template _content.md - it is actually pretty easy to create slides! And, of course, knowing how to use [markdown] is a pre-requisite - which is also very easy. 
+
+# Some editing tips:
+- If you want to have a custom attribute to an HTML element, follow it with:
+   
+   ```
+      <!-- .element: <your attributes> -->
+   ```   
+
+   For example:
+
+   ```
+      <!-- .element: id="myelem" style="text-align: center; float: left;" -->
+   ```
+- If you want some style to be applied to a group of lines (eg: a paragraph), surround that with <div>..</div> and then apply style attribute to the `div` as above. Example:
+
+   ```
+      <div>
+         My paragraph is this.
+         This has many lines.
+         - And also some lists
+         - with more than one element
+      </div>
+      <!-- .element: id="myelem" style="text-align: center; float: left;" -->
+   ``` 
+
+For more advanced editing, you may have to put your slides directly in index.html instead of having a markdown-based content.md as what we have. For such advanced editing...
 
 # Advanced editing
 Reveal.js has many more advanced editing features, and feel free to try them out! Only aspect that needs to be intact is the general template (the header, footer, logo and copyright elements): the content area can just go as you want it. This is just to have some uniformity in all our slides.
