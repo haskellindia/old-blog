@@ -1,6 +1,6 @@
 <!-- SLIDE 2 -->
 Single column slide
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 Some content goes here
 
@@ -12,7 +12,7 @@ Some content goes here
 <!-- SLIDE 3 -->
 <!-- Left side content -->
 Double column slide
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 <div>
 Left-side information
@@ -33,14 +33,14 @@ Right-side information
 
 <!-- SLIDE 4 -->
 Vertical slide example
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 Navigate down with a down-arrow
 
 ===
 
 Vertical slide title here
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 Keep going down
 
@@ -61,19 +61,19 @@ This is a section slide. It Contains
 -->
 
 # 
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 # Section heading
-<!-- .element: id="section-heading" -->
+<!-- .element: class="section-heading" -->
 Section-brief line
-<!-- .element: id="section-brief" -->
+<!-- .element: class="section-brief" -->
 
 ---
 
 <!-- CREDITS -->
 
 Credits
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 <div>
 &lt;Name1&gt; [github-username](https://github.com/github-username>)

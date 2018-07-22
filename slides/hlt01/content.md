@@ -1,5 +1,5 @@
 Instructions
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 <!-- Left side content -->
 <div>
@@ -26,26 +26,27 @@ Instructions
 ---
 
 # 
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 # Introduction
-<!-- .element: id="section-heading" -->
+<!-- .element: class="section-heading" -->
 What is Haskell, and why is it called as a “Pure Functional Language”
-<!-- .element: id="section-brief" -->
+<!-- .element: class="section-brief" -->
 
 ---
 
 # Introduction
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 <br/>
+<!-- .element: style="line-height: 1;" -->
 
 ### What is Haskell?
 
 Pure Functional Programming Language
 <!-- .element: style="text-align: center;" -->
 
-![Functional Programming](images/04-01.png)
+![04-01](images/04-01.png)
 <!-- .element: style="border:0;" -->
 
 “Functional Programming” is a style in which the basic method of computations is by _**application of functions to arguments**_.
@@ -59,16 +60,38 @@ In the illustration above:
 
 ---
 
+# Introduction
+<!-- .element: class="title" -->
+
+<br/>
+<!-- .element: style="line-height: 1;" -->
+
+### What is "pure" FP?
+
+Output depends only on the inputs, i.e., a function of only inputs.
+<!-- .element: style="text-align: center;" -->
+
+![05-01](images/05-01.png)
+<!-- .element: style="border:0;" -->
+
+Pure FP maintains **Referential Transparency**.
+
+Every time `f()` is called with the same `arg1` and `arg2`, it always outputs the same value. In other words, `f()` can be replaced by its output value without affecting the program behaviour.
+
+Now, why does this matter?
+
+---
+
 <!-- SLIDE 4 -->
 Vertical slide example
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 Navigate down with a down-arrow
 
 ===
 
 Vertical slide title here
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 Keep going down
 
@@ -81,7 +104,7 @@ Navigate up with a up-arrow
 <!-- CREDITS -->
 
 Credits
-<!-- .element: id="title" -->
+<!-- .element: class="title" -->
 
 <div>
 &lt;Name1&gt; [github-username](https://github.com/github-username>)
@@ -92,3 +115,16 @@ Credits
 &lt;Name2&gt; [github-username](https://github.com/github-username>)
 </div>
 <!-- .element: style="font-family: 'Courier New', Courier, monospace;font-size: 20px" -->
+
+---
+
+# 
+<!-- .element: class="title" -->
+
+# Thank you!
+<!-- .element: class="section-heading" -->
+
+<div>
+Want more? Join the [Haskell India Group](https://t.me/haskellindia)!
+</div>
+<!-- .element: class="section-brief" -->

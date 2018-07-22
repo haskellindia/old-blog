@@ -121,13 +121,13 @@
 					return
 				}
 
-				var title = document.querySelector('.slides > .present > #title')
+				var title = document.querySelector('.slides > .present > .title')
 
 				if (title == null)
 				{
 					// May be we have a title in a vertical slide
 					var present = document.getElementsByClassName('stack present')
-					var title = present[0].querySelector('.present > #title')
+					var title = present[0].querySelector('.present > .title')
 				} 
 				else 
 				{
