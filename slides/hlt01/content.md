@@ -37,10 +37,8 @@ What is Haskell, and why is it called as a “Pure Functional Language”
 
 # Introduction
 <!-- .element: class="title" -->
-
 <br/>
 <!-- .element: style="line-height: 1;" -->
-
 ### What is Haskell?
 
 Pure Functional Programming Language
@@ -62,11 +60,8 @@ In the illustration above:
 
 # Introduction
 <!-- .element: class="title" -->
-
 <br/>
-<!-- .element: style="line-height: 1;" -->
-
-### What is "pure" FP?
+### What is a "pure" Function?
 
 Output depends only on the inputs, i.e., a function of only inputs.
 <!-- .element: style="text-align: center;" -->
@@ -74,7 +69,7 @@ Output depends only on the inputs, i.e., a function of only inputs.
 ![05-01](images/05-01.png)
 <!-- .element: style="border:0;" -->
 
-Pure FP maintains **Referential Transparency**.
+Pure function maintains **Referential Transparency**.
 
 Every time `f()` is called with the same `arg1` and `arg2`, it always outputs the same value. In other words, `f()` can be replaced by its output value without affecting the program behaviour.
 
