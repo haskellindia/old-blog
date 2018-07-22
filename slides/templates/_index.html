@@ -20,14 +20,18 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? '/reveal.js/css/print/pdf.css' : '../../css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<!-- Side panel -->
+		<!-- <link rel="stylesheet" href="/3rdparty/panel/css/reset.css"> -->
+		<link rel="stylesheet" href="/3rdparty/panel/css/style.css"> 
 	</head>
 	<body>
 		<div class="reveal">			 
 		<div id="header">
 			<p id="header-text" style="padding-left: 10px; margin-top: 0px; white-space: nowrap;"></p> 
-		</div>	
+		</div>	<!-- header -->
 
-		<img src="/images/HIG-Logo-White-300.png" alt="HIG Logo" id="logo"/>
+		<a href="#0" class="cd-btn js-cd-panel-trigger" data-panel="main"><img src="/images/HIG-Logo-White-300.png" alt="HIG Logo" id="logo"/></a>
 	
 		<div id="footer" style="font-size: 15px; vertical-align: middle;">
      		<a href="https://t.me/haskellindia" class="footer-icon" style="margin-top: 0">
@@ -39,40 +43,58 @@
 			<p id="footer-text">
 			Haskell Learning Trails by <a href="https://t.me/haskellindia"> Haskell India Group </a> is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
 			</p>
-		</div>
+		</div> <!-- footer -->
 												
-			<!-- ALL SLIDES BEGIN HERE -->
-			<div class="slides">				
-				<!-- SLIDE 1: Title slide -->	
-				<section>
-					<p>
-				    <!-- DO NOT CHANGE THE NEXT LINE -->
-					<h2>Haskell Learning Trails</h2>
+		<!-- ALL SLIDES BEGIN HERE -->
+		<div class="slides">				
+			<!-- SLIDE 1: Title slide -->	
+			<section>
+				<p>
+				<!-- DO NOT CHANGE THE NEXT LINE -->
+				<h2>Haskell Learning Trails</h2>
 
-					<!-- Next line: CHANGE THE TITLE to the title of your HLT series -->
-					<h4>HLT01: Getting Started</h4>
+				<!-- Next line: CHANGE THE TITLE to the title of your HLT series -->
+				<h4>HLT01: Getting Started</h4>
 
-					<!-- DO NOT CHANGE ANYTHING BELOW IN THIS SLIDE -->
-					<div style="width: 80%; font-style: normal; font-family: 'Courier New', Courier, monospace;font-size: 20px">
+				<!-- DO NOT CHANGE ANYTHING BELOW IN THIS SLIDE -->
+				<div style="width: 80%; font-style: normal; font-family: 'Courier New', Courier, monospace;font-size: 20px">
 <p>This material was created by a group of Haskell enthusiasts in the <a href="https://t.me/haskellindia">Haskell India Group (HIG)</a>. This group is an India-focussed Haskell Group on Telegram, meant primarily to connect Haskellers across India, and to complement existing personal meetups at various places in India. If you are interested to be a part of this group, and contribute to the growth of Haskell usage in India (either as a start-up, big company, independent professional, hobbyist, student, teacher / lecturer / professor, university, etc.), please join this group: <a href="https://t.me/haskellindia">https://t.me/haskellindia</a> and help India!</p>
 
 <p>Please feel free to share this material to anybody you think would be interested! And, if you would like to contribute to this learning trails, head here: <a href="https://github.com/haskellindia/haskellindia.github.io">https://github.com/haskellindia/haskellindia.github.io</a></p>
-					</div>
-					</p>
-				</section>
-				
-				<!-- Actual slide contents begin from here -->
-				<!-- SLIDE 2 onwards -->
-				<section data-markdown="content.md"
-						 data-separator-vertical="^\r?\n===\r?\n$"
-						 style="line-height: 2;"/>				
-			</div>
+				</div>
+				</p>
+			</section>
+			
+			<!-- Actual slide contents begin from here -->
+			<!-- SLIDE 2 onwards -->
+			<section data-markdown="content.md"
+						data-separator-vertical="^\r?\n===\r?\n$"
+						style="line-height: 2;"/>				
+		</div> <!-- slides -->
 			<!-- SLIDES END HERE -->
-		</div>
+		</div> 
+
+		<div class="cd-panel cd-panel--from-right js-cd-panel-main">
+			<header class="cd-panel__header">
+				<h1>Haskell Terminal</h1>
+				<a href="#0" class="cd-panel__close js-cd-close">Close</a>
+			</header>
+	
+			<div class="cd-panel__container">
+				<div class="cd-panel__content">
+						<blockquote class="embedly-card"><h4><a href="https://repl.it/@haskellindia/hlt">hlt</a></h4><p>Embed into Haskell Learning Trails by Haskell India Group.</p></blockquote>
+						<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+				</div> <!-- cd-panel__content -->
+			</div> <!-- cd-panel__container -->
+			<p>
+				Side panel idea from codehouse.io.
+			</p>
+		</div> <!-- cd-panel -->
 
 		<script src="/reveal.js/lib/js/head.min.js"></script>
 		<script src="/reveal.js/js/reveal.js"></script>
 		<script src="/reveal.js/js/jquery.min.js"></script>
+		<script src="/3rdparty/panel/js/main.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -86,7 +108,9 @@
 					{ src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				],
 
-				controlsLayout: 'edges'
+				controlsLayout: 'edges',
+
+				center: 'false'
 			});
 
 			// BEGIN: Change slide headings when slide changes
@@ -165,5 +189,7 @@
 			}
 
 		</script>
+	</div>
 	</body>
+	
 </html>

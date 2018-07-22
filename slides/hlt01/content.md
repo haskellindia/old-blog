@@ -1,4 +1,13 @@
-<!-- SLIDE 2 -->
+# Getting started
+<!-- .element: id="title" -->
+
+### Navigation hints
+- This slide-set is based on reveal.js, so all the keyboard shortcuts from reveal.js
+are available in this. Press **'?'** for an overview of all keyboard shortcuts. 
+- **Click on the Haskell India logo (on the bottom right) to open a Haskell Interactive prompt! You can try out live Haskell code on this.**
+
+---
+
 # Getting started
 <!-- .element: id="title" -->
 
@@ -22,7 +31,14 @@ What is Haskell, and why is it called as a “Pure Functional Language”
 
 ---
 
-<!-- SLIDE 3 -->
+# Introduction
+<!-- .element: id="title" -->
+
+## What is Haskell?
+
+
+---
+
 <!-- Left side content -->
 Double column slide
 <!-- .element: id="title" -->

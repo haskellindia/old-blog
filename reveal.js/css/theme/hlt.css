@@ -43,7 +43,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 #logo {
   width: 77px;
   height: 57px;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   bottom: 10px;
   right: 0; }
