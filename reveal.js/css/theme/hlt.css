@@ -61,6 +61,24 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-size: 24px;
   color: #898989; }
 
+.summary-text {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.left-box {
+  line-height: 1.5;
+  float: left;
+  width: 49%;
+  text-align: left; }
+
+.right-box {
+  line-height: 1.5;
+  float: right;
+  width: 49%;
+  text-align: left; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

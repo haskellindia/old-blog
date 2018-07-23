@@ -113,6 +113,32 @@ section.has-dark-background {
 	color: rgb(137, 137, 137)
 }
 
+// Positional aids ----------------------------
+
+.summary-text
+{
+	text-align: center; 
+	position: absolute; 
+	bottom: 0; 
+	width: 100%
+}
+
+.left-box
+{
+	line-height: 1.5; 
+	float:left; 
+	width: 49%; 
+	text-align: left;
+}
+
+.right-box
+{
+	line-height: 1.5; 
+	float: right; 
+	width: 49%; 
+	text-align: left;
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

@@ -12,7 +12,7 @@ Instructions
 - Install Haskell (in any platform) - Introductory slides give how-to do this
 - Code, code, code. Practise, practise, practise. **And don’t stop with these slides!**
 </div>
- <!-- .element: style="line-height: 1.5; float:left; width: 49%; text-align: left;" -->
+ <!-- .element: class="left-box" style="line-height: 1.5" -->
 
 <!-- Right side content -->
 <div>
@@ -21,7 +21,7 @@ Instructions
 - This slide-set is based on <a href="https://github.com/hakimel/reveal.js/" target="_blank">reveal.js</a>, so all the keyboard shortcuts from reveal.js are available in this. Press **'?'** for an overview of all keyboard shortcuts. 
 - **Click on the Haskell India logo (on the bottom right) to open a Haskell Interactive prompt! You can try out live Haskell code on this.**
 </div>
-<!-- .element: style="line-height: 1.5; float: right; width: 49%; text-align: left;" -->
+<!-- .element: class="right-box" -->
 
 ---
 
@@ -135,6 +135,43 @@ Output depends on not only arguments `a` and `b`, but also on an external variab
 *The examples are not Haskell examples, just a generic language for illustration.
 </div>
 <!-- .element: style="font-size: 20px; text-align: center; position: absolute; bottom: 0; width: 100%" -->
+
+---
+
+Introduction
+<!-- .element: class="title" -->
+<br/>
+<!-- .element: style="line-height: 1;" -->
+### More examples of impure functions
+<!-- .element: style="color: white;" --> 
+
+<!-- Left side content -->
+<div>
+#### Read from a memory address
+<!-- .element: style="text-align: center"-->
+
+![07-01](images/07-01.png)
+<!-- .element: style="border:0;" -->
+
+Function returns a `value` from a memory address `addr`, and has no control on its contents.
+
+</div>
+ <!-- .element: class="left-box" -->
+
+<!-- Right side content -->
+<div>
+#### Read a key from keyboard
+<!-- .element: style="text-align: center"-->
+
+![07-02](images/07-02.png)
+<!-- .element: style="border:0;" -->
+
+Function returns the key pressed and _can_ return different values everytime.
+
+<br/>
+
+</div>
+<!-- .element: class="right-box" -->
 
 ---
 
