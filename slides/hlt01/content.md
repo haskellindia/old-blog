@@ -1,30 +1,3 @@
-Instructions
-<!-- .element: class="title" -->
-
-<!-- Left side content -->
-<div>
-### How to use this slide set?
-<!-- .element: style="text-align: center"-->
-- As you read a slide, try checking out the results of the code given in slides
-  You can use the online interactive prompt (**click logo on the bottom-right**)
-  for quickly checking results.
-- Use other online articles / materials to internalise the content in the slide
-- Install Haskell (in any platform) - Introductory slides give how-to do this
-- Code, code, code. Practise, practise, practise. **And don’t stop with these slides!**
-</div>
- <!-- .element: class="left-box" style="line-height: 1.5" -->
-
-<!-- Right side content -->
-<div>
-### Navigation hints
-<!-- .element: style="text-align: center"-->
-- This slide-set is based on <a href="https://github.com/hakimel/reveal.js/" target="_blank">reveal.js</a>, so all the keyboard shortcuts from reveal.js are available in this. Press **'?'** for an overview of all keyboard shortcuts. 
-- **Click on the Haskell India logo (on the bottom right) to open a Haskell Interactive prompt! You can try out live Haskell code on this.**
-</div>
-<!-- .element: class="right-box" -->
-
----
-
 # 
 <!-- .element: class="title" -->
 
@@ -211,8 +184,6 @@ Show me some code! Navigate down with down-arrow.
 <!-- .element: class="title" -->
 
 # &lt;To be continued&gt;
-
-===
 
 ---
 
