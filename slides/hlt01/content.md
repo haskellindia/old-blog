@@ -175,6 +175,47 @@ Function returns the key pressed and _can_ return different values everytime.
 
 ---
 
+Introduction
+<!-- .element: class="title" -->
+<br/>
+<!-- .element: style="line-height: 1;" -->
+### Why does 'purity' matter?
+<!-- .element: style="color: white;" -->
+
+![08-01](images/08-01.png)
+<!-- .element: style="border:0;" -->
+
+### Some advantages:
+<div>
+- Makes “Static Code Analysis” very good
+- Compiler can reason, and optimise better
+- Testing of code can be based on reasoning
+- Concurrency can be automatically achieved 
+- And many more...
+</div>
+<!-- .element: style="line-height: 1.5;" -->
+
+---
+
+# 
+<!-- .element: class="title" -->
+
+# Code break
+<!-- .element: class="section-heading" -->
+Show me some code! Navigate down with down-arrow.
+<!-- .element: class="section-brief" -->
+
+===
+
+# Basic Haskell
+<!-- .element: class="title" -->
+
+# &lt;To be continued&gt;
+
+===
+
+---
+
 # 
 <!-- .element: class="title" -->
 

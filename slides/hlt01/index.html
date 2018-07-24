@@ -69,7 +69,7 @@
 			<!-- SLIDE 2 onwards -->
 			<section data-markdown="content.md"
 						data-separator-vertical="^\r?\n===\r?\n$"
-						style="line-height: 2;"/>				
+						style="line-height: 1.5;"/>				
 		</div> <!-- slides -->
 			<!-- SLIDES END HERE -->
 		</div> 
@@ -129,15 +129,13 @@
 					var present = document.getElementsByClassName('stack present')
 					var title = present[0].querySelector('.present > .title')
 				} 
-				else 
-				{
-					if (title.innerHTML.startsWith("#"))
-					{
-						// Section headings start with "#"
-						title.innerHTML = "";
-					}
-				}
 
+				if (title.innerHTML.startsWith("#"))
+				{
+					// Section headings start with "#"
+					title.innerHTML = "";
+				}
+				
 				var target = document.getElementById('header-text')
 
 				if (title != null)
